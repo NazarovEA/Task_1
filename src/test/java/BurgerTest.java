@@ -43,5 +43,7 @@ public void setUp(){
         int expectedCount = 2;
         int actualCount = burger.ingredients.size();
         assertEquals(expectedCount,actualCount, "Соус или начинка не удалились");
+        assertEquals(bun,burger.bun, "Булочки нет в бургере");
     }
+
 }
