@@ -37,6 +37,7 @@ public void setUp(){
             public void removeIngredientTest() {
         burger.setBuns(bun);
         burger.addIngredient(ingredient);
+        assertEquals(1, burger.ingredients.size(), "не добавили ингридиент");
         burger.addIngredient(ingredient);
         burger.addIngredient(ingredient);
         burger.removeIngredient(1);
