@@ -9,6 +9,7 @@ public class BunTest {
     private static final String EXPECTED_NAME = "Булка вкусная";
     private static final float EXPECTED_PRICE = 600;
 
+
     @BeforeEach
     public void setUp() {
         bun = new Bun(EXPECTED_NAME, EXPECTED_PRICE);
