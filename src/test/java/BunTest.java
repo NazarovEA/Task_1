@@ -6,20 +6,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BunTest {
     private Bun bun;
-    private String expectedName = "Булка вкусная";
-    private float expectedPrice = 600;
+    private static final String EXPECTED_NAME = "Булка вкусная";
+    private static final float EXPECTED_PRICE = 600;
 
     @BeforeEach
     public void setUp() {
-        bun = new Bun(expectedName, expectedPrice);
+        bun = new Bun(EXPECTED_NAME, EXPECTED_PRICE);
     }
     @Test
     public void getCorrectName() {
-        assertEquals(expectedName, bun.getName(), "Некорректное значение");
+        assertEquals(EXPECTED_NAME, bun.getName(), "Некорректное значение");
     }
 
     @Test
     void getCorrectPrice() {
-        assertEquals(expectedPrice, bun.getPrice(), "Не корректное значение");
+        assertEquals(EXPECTED_PRICE, bun.getPrice(), "Не корректное значение");
     }
 }
